@@ -11,14 +11,25 @@ Tags: #git #github #rest_and_go_pet #terminal #code #bash
 
 
 # Steps
+## Настройка SSH и подключение к репу
+1. Сгенерировать SSH-ключ
 ```bash
-sudo apt install git
+ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
-
+2. Добавить ключ в GitHub
+Скопировать содержимое `~/.ssh/id_ed25519.pub`.
+В GitHub: `Settings` → `SSH and GPG keys` → `New SSH key`.
+3. Клонировать реп и сменить директорию
+```bash
+git clone git@github.com:Danyarbrg/securelogAPI.git
+cd securelogAPI
+```
+4. Конфиг
 ```bash
 git config --global user.name "<ваше_имя>"
 git config --global user.email "<адрес_почты@email.com>"
 ```
+## Работа с Git
 - Check status
 ```bash
 git status
