@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.FoodDeliveryApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Настройка базовых цветов для Material3 -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Совместимость с устаревшими атрибутами -->
-        <item name="android:statusBarColor">?attr/colorPrimary</item>
-        <item name="android:windowBackground">@color/white</item>
+
+    <!-- Базовая тема приложения -->
+    <style name="Theme.FoodApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Здесь можно настроить цвета, шрифты и т.д. -->
+        <item name="android:colorBackground">@android:color/background_light</item>
     </style>
+
 </resources>

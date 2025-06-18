@@ -1,37 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical" android:padding="24dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-
-    <ListView
-        android:id="@+id/categories_list"
+    <Button
+        android:id="@+id/btn_food_type_1"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp" />
+        android:layout_height="wrap_content"
+        android:text="Пицца" />
 
     <Button
-        android:id="@+id/button_cart"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_food_type_2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:text="@string/view_cart" />
+        android:text="Суши" />
 
     <Button
-        android:id="@+id/button_about"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_food_type_3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:text="@string/about" />
+        android:text="Бургеры" />
+
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="О приложении" />
 
 </LinearLayout>
