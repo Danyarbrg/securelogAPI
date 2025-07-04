@@ -7,6 +7,7 @@ import (
 	"github.com/Danyarbrg/securelogAPI/internal/config"
 	"github.com/Danyarbrg/securelogAPI/internal/db"
 	"github.com/Danyarbrg/securelogAPI/internal/models"
+	"github.com/Danyarbrg/securelogAPI/internal/routes"
 )
 
 func main() {
@@ -27,4 +28,11 @@ func main() {
 		log.Fatalf("Misstake while inserting log: %v", err)
 	}
 
+	router := routes.SetupRouter(database)
+
+	log.Printf("🚀 Сервер запущен на порту %s\n", cfg.Port)
+	err := router.Run(":" + cfg.Port)
+	if err != nil {
+		log.Fatalf("Ошибка запуска сервера: %v", err)
+	}
 }
